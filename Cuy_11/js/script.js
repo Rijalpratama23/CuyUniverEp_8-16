@@ -8,20 +8,24 @@ const biru = document.querySelector('.biru');
 
 // merah
 merah.addEventListener('click', () => {
+    body.style.transition = ".3s"
     body.style.backgroundColor = "rgb(253, 64, 64";
 })
 
 // kuning
 kuning.addEventListener('click', () => {
+    body.style.transition = ".3s"
     body.style.backgroundColor = "rgb(238, 238, 49)";
 })
 
 // hijau
 hijau.addEventListener('click', () => {
+    body.style.transition = ".3s"
     body.style.backgroundColor = "rgb(58, 254, 58)";
 })
 
 // biru
 biru.addEventListener('click', () => {
+    body.style.transition = ".3s"
     body.style.backgroundColor = "rgb(43, 43, 253)";
 })

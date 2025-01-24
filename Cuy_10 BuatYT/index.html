@@ -4,10 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show Vidio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #222;
+        }
+        .container {
+            max-width: 50%;
+            margin: 20px auto;
+            position: relative;
+        }
+        .btn {
+            border: none;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 800;
+            cursor:pointer;
+            border-radius: 8px;
+        }
+        vidio {
+            width: 100%;
+            display: block;
+        }
+        .vidio-component {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 15px 12px;
+        }
+        .btn-play {
+            background-color: crimson;
+        }
+        .btn-minimize {
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <video controls>
-        <source src="asset/iklan.mp4"/>
-    </video>
+    <div class="container">
+        <video width="720" id="vidio">
+            <source src="asset/iklan.mp4" type="video/mp4" />
+        </video>
+        <div class="vidio-component">
+            <button onclick="play()" class="btn btn-play">PLAY</button>
+            <button onclick="pause()" class="btn btn-pause">PAUSE</button>
+            <button onclick="minimize()" class="btn btn-minimize">MINIMIZE</button>
+        </div>
+    
+    </div>
+    
+    <script>
+        const VideoComponent = document.getElementById("vidio")
+        function play() {
+            console.log("playing")
+            VideoComponent.play()
+        }
+
+        function pause() {
+            console.log("pause")
+            VideoComponent.pause()
+        }
+
+        function minimize() {
+            console.log("minimize")
+            VideoComponent.requestPictureInPicture()
+        }
+    </script>
 </body>
 </html>

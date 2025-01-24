@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "JetBrains Mono", serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.content {
+    display:block;
+    text-align: center;
+    margin-top: 20%;
+}
+.select-warna {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 15px;
+    background-color: #888;
+    padding: 20px;
+    width: 259px;
+    border-radius: 15px;
+}
+.merah, .kuning, .hijau, .biru {
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* tombol warna merah */
+.merah {
+    background-color: rgb(253, 64, 64);
+}
+.merah:hover {
+    background-color: red;
+    transition: .3s;
+}
+.merah:active {
+    background-color:  rgb(245, 170, 170);
+    transition: .2s;
+}
+
+/* tombol warna kuning */
+.kuning {
+    background-color: rgb(238, 238, 49);
+}
+.kunig:hover {
+    transition: .3s;
+    background-color: rgb(162, 162, 7);
+}
+.kuning:active {
+    background-color: rgb(243, 243, 156);
+    transition: .2s;
+}
+
+/* tombom warna hijau */
+.hijau {
+    background-color: rgb(58, 254, 58);
+}
+.hijau:hover {
+    background-color: rgb(5, 188, 5);
+    transition: .3s;
+}
+.hijau:active {
+    transition: .2s;
+    background-color: rgb(144, 246, 144);
+}
+
+/* tombol warna biru */
+.biru {
+    background-color: rgb(43, 43, 253);
+}
+.biru:hover {
+    transition: .3s;
+    background-color: rgb(8, 8, 232);
+}
+.biru:active {
+    transition: .2s;
+    background-color: rgb(113, 148, 252);
+}
+
+@media screen and (max-width: 768px) {
+    .content{
+        margin-top: 56%;
+        
+    }
+}

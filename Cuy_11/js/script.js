@@ -29,3 +29,6 @@ biru.addEventListener('click', () => {
     body.style.transition = ".3s"
     body.style.backgroundColor = "rgb(43, 43, 253)";
 })
+
+// function dengan
+funtion 
